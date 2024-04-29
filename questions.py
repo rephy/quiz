@@ -11,7 +11,7 @@ class Questions:
         self.num_of_questions = int(input("How many questions do you want? "))
         new_line()
         self.difficulty_level = input("What difficulty do you want? (easy/medium/hard) ").lower().strip()
-        if (self.difficulty_level != "easy") or (self.difficulty_level != "easy") or (self.difficulty_level != "easy"):
+        if (self.difficulty_level != "hard") and (self.difficulty_level != "medium") and (self.difficulty_level != "easy"):
             self.difficulty_level = "hard"
 
     def new_questions(self):
